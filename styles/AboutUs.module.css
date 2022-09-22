@@ -1,0 +1,24 @@
+.aboutcomponent{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: #1189C8;
+}
+
+.aboutImage{
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.abouth2{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutp{
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 40px;
+}
+

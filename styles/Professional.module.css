@@ -1,0 +1,27 @@
+
+.title{
+    color: #1189C8;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 7px;
+    font-size: 25px;
+}
+.inputs{
+    display: flex;
+    justify-content: space-around;
+}
+.visitButton{
+    background-color: #77A535;
+    padding: 8px 20px;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 13px;
+}
+
+.main{
+    background-image: url('../public/images/digital-composite-doctor-with-white-graph-with-flare-against-blurry-background-with-light-blue-overlay.jpeg');
+    background-size: cover;
+}
