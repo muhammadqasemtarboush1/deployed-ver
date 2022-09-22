@@ -128,7 +128,7 @@ export default function LabVisit({ visitData }) {
                             <div >
                                 <div className='mb-5'>
                                     <label for="message" class="block mb-2 text-md font-medium text-gray-900 dark:text-gray-400">Tests</label>
-                                    <div id="message" rows="9" class="mb-3 overflow-y-auto h-36 block p-2.5 w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-30 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" >{visitData.test ? visitData.test : "there is no tests provided yet"}</div>
+                                    <div id="message" rows="9" class="mb-3 overflow-y-auto h-36 block p-2.5 w-full text-lg text-gray-900 bg-gray-50 rounded-lg border border-gray-30 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white" >{visitData.test_description ? visitData.test_description : "there is no tests provided yet"}</div>
                                     <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 mt-5" for="tests_files">Tests Results</label>
                                     <div className='flex justify-around'>
                                         <UploadFile setLinks={setLinks} links={links} />

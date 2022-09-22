@@ -1,4 +1,4 @@
-import React , {useState ,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 //Import Components
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Dropdown, DropdownButton } from 'react-bootstrap/';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // get our fontawesome imports
-import {  faSignIn, faSignInAlt, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
+import { faSignIn, faSignInAlt, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { async } from '@firebase/util';
 
@@ -19,14 +19,14 @@ import { async } from '@firebase/util';
 export default function Navbar() {
     const { isAuth, logout } = useAuth();
     const [Auth, setAuth] = useState(false);
-    
+
     const router = useRouter();
-    
+
 
     useEffect(() => {
-    isAuth()?setAuth(true):setAuth(false)
+        isAuth() ? setAuth(true) : setAuth(false)
     }, []);
-    
+
     function handleLogout(e) {
         e.preventDefault();
         logout()
@@ -49,8 +49,8 @@ export default function Navbar() {
                     </Dropdown>
                     {
                         Auth ?
-                         <Link href='account/login'><div onClick={handleLogout} className={styles.whiteButtons}>Logout <FontAwesomeIcon className='inline w-5' icon={faSignOutAlt} /></div></Link> : 
-                         <Link href='account/login'><div className={styles.whiteButtons} ><FontAwesomeIcon className='inline w-5' icon={faSignInAlt} />Login</div></Link>
+                            <Link href='account/login'><div onClick={handleLogout} className={styles.whiteButtons}>Logout <FontAwesomeIcon className='inline w-5' icon={faSignOutAlt} /></div></Link> :
+                            <Link href='account/login'><div className={styles.whiteButtons} >Login</div></Link>
                     }
                 </div>
 
